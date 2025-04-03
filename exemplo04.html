@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            font-style: 16px;
+
+        }
+
+        .container{
+            border: 1px;
+            border-style: solid;
+            border-color: antiquewhite;
+            width: 10rem;
+            height: 12rem;
+            padding: 1rem;
+            box-shadow: 0.5rem 0.5rem 1.3rem .01rem rgb(100, 97, 255);
+            margin: 2rem auto;
+            background-color: black;
+            text-decoration: antiquewhite;
+            color: antiquewhite;
+
+        }
+
+        img{
+            width: 100%;
+            height: 35%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <script>
+            /*
+            Estrutura seuqencial
+            comando de saída
+            comando de entrada
+            */
+            var produto=prompt("digite o produto");
+            var desc = prompt("digite a descrição do produto:");
+            var preco = prompt("digite o preço:");
+
+            document.write(`<img src="insta-amarelo.png" alt="foto da logo">`)
+            document.write(`<h1>${produto}</h1>`);
+            document.write(`<article>${desc}</article>`);
+            document.write(`<article>${preco} </article>`);
+            
+            
+        </script>
+        
+    </div>
+
+</body>
+
+</html>
