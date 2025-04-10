@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+    <link rel="stylesheet" href="style_Exemplo05.css">
+
+</head>
+
+<body>
+
+    <div class="painel">
+
+        <section class="cabecalho">
+            <input type="number" id="numero1" class="entrada">
+            <input type="number" id="numero2" class="entrada">
+            <button onclick="somar()"> somar </button>
+        </section>
+
+        <main class="corpo">
+            <div id="resp"></div>
+        </main>
+    </div>
+
+    <script>
+        /*
+        * Comandos de entrada
+        * Variavel
+        * Comandos de saída
+        *
+        */
+        function somar() {
+
+            var num1 = parseInt(document.getElementById("numero1").value);
+            var num2 = parseInt(document.getElementById("numero2").value);
+
+            var soma = num1 + num2;
+
+            document.getElementById("resp").innerHTML += `<p>${num1} + ${num2} = ${soma}</p>`;
+        }
+    </script>
+</body>
+
+</html>
